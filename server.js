@@ -1,7 +1,7 @@
 var express = require("express");
 var path = require("path");
-var tablesData = require("../tables/tableArray");
-var waitListData = require("../tables/waitlistArray");
+var tablesData = require("./tables/tableArray");
+var waitListData = require("./tables/waitlistArray");
 
 var app = express();
 var PORT = 3000;
