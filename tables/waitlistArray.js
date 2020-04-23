@@ -1,4 +1,4 @@
-var tableArray = [
+var waitlistArray = [
   {
     customerName: "Bill",
     customerEmail: "Bill@example.com",
