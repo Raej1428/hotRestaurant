@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script   src="https://code.jquery.com/jquery-3.4.1.js"   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="   crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">>
     <title>Reservation Page</title>
 </head>
@@ -73,7 +74,7 @@
             // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
         
             $(".submit").on("click", function(){
-        
+        		event.preventDefault();
                 // Here we grab the form elements
                 var newReservation = {
                     customerName: $('#reserve_name').val().trim(),

@@ -37,12 +37,14 @@ app.get("/api/waitlist", function(req, res) {
   });
 
 app.post("/api/tables", function(req, res) {
- 
+ console.log(req.body);
     if (tablesData.length < 5) {
+        console.log("here we are tabeled");
       tablesData.push(req.body);
       res.json(true);
     }
     else {
+        console.log("here we are waitlisted");
       waitListData.push(req.body);
       res.json(false);
     }
